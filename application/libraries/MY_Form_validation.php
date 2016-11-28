@@ -46,7 +46,7 @@ class MY_Form_validation extends CI_Form_validation
      * in the specified database field, except in the row mentioned with identifying field.
      *
      * @param	string	$str
-     * @param	string	$field with the format table.field.identifying_field.identifying_field_value
+     * @param	string	$field with the format table.field_to_check_uniqueness.identifying_field.identifying_field_value
      * @return	bool
      */
     public function is_unique_except($str,$field)
