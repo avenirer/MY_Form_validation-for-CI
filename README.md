@@ -11,3 +11,5 @@ is_unique_except - checks if the input is unique in a table, and the value is no
 $this->form_validation->set_rules('username','Username','trim|required|is_unique_except[users.username.id.'.$id.']';
 ```
 You pass it the table name, the field name, the primary key name and the value of the primary key.
+
+not_in_list - makes sure the input value is not the same as the elements passed to the rule (same as in_list but the other way around)
