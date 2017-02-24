@@ -78,4 +78,16 @@ class MY_Form_validation extends CI_Form_validation
         }
         return TRUE;
     }
+
+    /**
+     * Value should be within an array of values
+     *
+     * @param	string
+     * @param	string
+     * @return	bool
+     */
+    public function not_in_list($value, $list)
+    {
+        return !in_array($value, explode(',', $list), TRUE);
+    }
 }
